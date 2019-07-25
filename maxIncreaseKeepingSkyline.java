@@ -33,7 +33,7 @@ public int maxIncreaseKeepingSkyline(int[][] grid) {
 
     // first get the skylines
     for (i = 0; i < n; i++){
-      for (j = 0; i < n; j++){
+      for (j = 0; j < n; j++){
         topbottom[i] = Math.max(topbottom[i], grid[i][j]);
         leftright[i] = Math.max(leftright[j], grid[i][j]);
       }
