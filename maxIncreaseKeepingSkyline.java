@@ -41,7 +41,7 @@ public int maxIncreaseKeepingSkyline(int[][] grid) {
     // We now have the skylines
 
     for (i = 0; i < n; i++){
-      for (j = 0; i < n; j++){
+      for (j = 0; j < n; j++){
         count += Math.min(topbottom[i], leftright[i]) - grid[i][j];
         }
     }
